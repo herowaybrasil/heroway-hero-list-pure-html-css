@@ -16,7 +16,6 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  text-align: center;
 }
 
 /* HEROES-CONTAINER */
@@ -44,6 +43,7 @@
   text-transform: uppercase;
   color: #282c34;
   font-weight: 900;
+  text-align: left;
 }
 
 .heroes-container > .card > .hero {
@@ -60,6 +60,11 @@
   position: relative;
   bottom: 0;
   margin-right: 20px;
+}
+
+.heroes-container > .card > .hero > img:hover {
+  box-shadow: 1px 10px 8px rgba(0, 0, 0, 0.5);
+  bottom: 5px;
 }
 
 .heroes-container > .card > .hero > .hero-button {
@@ -85,6 +90,12 @@
   cursor: pointer;
 }
 
+.heroes-container > .card > .hero > .hero-button > button:hover {
+  background-color: #35415a;
+  box-shadow: 1px 10px 8px rgba(0, 0, 0, 0.5);
+  bottom: 5px;
+}
+
 /* HEROES-POWER-STATS */
 
 .hero-power-stats {
@@ -93,6 +104,7 @@
   align-items: center;
   width: 100%;
   flex-wrap: wrap;
+  text-align: center;
 }
 
 .hero-power-stats > .attributes {
