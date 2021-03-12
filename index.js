@@ -14,7 +14,7 @@ async function getHeroes() {
     const response = await fetch('https://akabab.github.io/superhero-api/api/all.json');
 
     const heroes = await response.json();
-    const tenFirstHeroes = heroes.filter((hero) => hero.id <= 10);
+    const tenFirstHeroes = heroes.filter((hero) => hero.biography.publisher === 'Marvel Comics');
 
     return tenFirstHeroes;
   } catch(e) {
